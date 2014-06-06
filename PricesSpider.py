@@ -67,8 +67,8 @@ def plot(priceTable):
     rects4 = ax.bar(ind+width*3, priceTable[3,:], width, color='y')
 
     # add some
-    ax.set_ylabel('Price in SEK')
-    ax.set_title('iPad Price in different countries')
+    ax.set_ylabel('price in SEK')
+    ax.set_title('iPad Air WiFi-only version prices in different countries')
     ax.set_xticks(ind+width)
     ax.set_xticklabels( ('16G', '32G', '64G', '128G') )
     ax.legend( (rects1[0], rects2[0], rects3[0], rects4[0]), (countryCode for countryCode in countryCodeList) )
